@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+
+         
+          <div class="login">
+                  <h1>Brighton Signage</h1>
+                  <form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+                    <input type = "file" name = "file" />
+                      <button type="submit" class="btn btn-primary btn-block btn-large">Send to Sign</button>
+                  </form>
+              </div>
+{% endblock %}
